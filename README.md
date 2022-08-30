@@ -28,9 +28,10 @@ Licensed under the [BSD 2-clause](LICENSE.md) license.
 3. [Usage](#usage)
 4. [API Usage](#api-usage)
 5. [References](#references)
-6. [MSRV](#msrv)
-7. [Contributing](#contributing)
-8. [Feedback](#feedback)
+6. [TODO](#todo)
+7. [MSRV](#msrv)
+8. [Contributing](#contributing)
+9. [Feedback](#feedback)
 
 ## Requirements
 
@@ -173,7 +174,7 @@ to properly close the reading channel.
 
 The [BSD 2-Clause license](https://github.com/keltia/flightaware-rs/LICENSE.md).
 
-# TODO
+## TODO
 
 
 ## MSRV
