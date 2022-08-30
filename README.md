@@ -2,32 +2,38 @@
 
 ## Description
 
-This is the library implementing the [Flightaware](http://www.flightaware.com/)  API in Rust.  It just exports the streaming data into JSON, using the FA API.
+This is the library implementing the [Flightaware](http://www.flightaware.com/) Firehose API in Rust.  It just exports the streaming data into JSON, using the FA API.  It is a more recent implementation than my previous [Flightaware Go].
 
 The `fa-export`) and `fa-tail` utilities are bundled directly as example code.
 
 ## Build status
 
-[![GitHub release](https://img.shields.io/github/release/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/releases)
+[![Build Status](https://api.cirrus-ci.com/github/keltia/flightaware-rs.svg?branch=main)](https://cirrus-ci.org/keltia/flightaware-rs)
+[![Crates.io](https://img.shields.io/crates/v/flightaware-rs.svg)](https://crates.io/crates/docs_rs)
+[![Docs](https://img.shields.io/docsrs/flightaware-rs)](https://docs.rs/flightaware-rs)
+[![GitHub release](https://img.shields.io/github/release/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/issues)
-[![Go Version](https://img.shields.io/badge/go-1.10-blue.svg)](https://golang.org/dl/)
-[![GoDoc](https://godoc.org/github.com/keltia/flightaware-rs?status.svg)](http://godoc.org/github.com/keltia/flightaware-rs)
-[![SemVer](http://img.shields.io/SemVer/2.0.0.png)](https://semver.org/spec/v2.0.0.html)
+[![flightaware-rs: 1.56+]][Rust 1.56]
+[![SemVer](https://img.shields.io/badge/semver-2.0.0-blue)]][Semantic Versioning]
 [![License](https://img.shields.io/pypi/l/Django.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![Go Report Card](https://goreportcard.com/badge/github.com/keltia/flightaware-rs)](https://goreportcard.com/report/github.com/keltia/flightaware-rs)
 
-Branch: develop — [![develop|Build Status](https://travis-ci.org/keltia/flightaware-rs.svg?branch=develop)](http://travis-ci.org/keltia/flightaware-rs/tree/develop)
-Branch: master — [![master|Build Status](https://travis-ci.org/keltia/flightaware-rs.svg?branch=master)](http://travis-ci.org/keltia/flightaware-rs)
+Licensed under the [BSD 2-clause](LICENSE).
 
 ## MSRV
 
-* Rust >= 1.54
+The Minimum Supported Rust Version is 1.56 due to the 2021 Edition.
 
-The API exposed follows the Semantic Versioning scheme to guarantee a consistent API compatibility.
+The API exposed follows the [Semantic Versioning] 2.0.0 scheme to guarantee a consistent API compatibility.
 
 ## Requirements
 
 This library requires the following cargo modules.
+
+In addition, the utilities consume a few modules such as:
+
+- clap
+- serde
+- serde_json
 
 ### Run-time
 
@@ -152,6 +158,10 @@ You can then use
 
 to properly close the reading channel.
 
+## References
+
+[Flightaware Firehose]
+
 ## License
 
 The [BSD 2-Clause license](https://github.com/keltia/flightaware-rs/LICENSE.md).
@@ -161,10 +171,24 @@ The [BSD 2-Clause license](https://github.com/keltia/flightaware-rs/LICENSE.md).
 
 # Contributing
 
-This project is an open Open Source project, please read `CONTRIBUTING.md`.  It also use the [Git flow]() model where all changes are made in the `develop` branch later incorporated by me in the `main` branch for releases.
+This project is an open Open Source project, please read `CONTRIBUTING.md`.  It also uses the [Git flow] model where all changes are made in the `develop` branch later incorporated by me in the `main` branch for releases.
+
+1. Fork it ( https://github.com/keltia/dmarc-rs/fork )
+2. Checkout the develop branch (`git checkout develop`)
+3. Create your feature branch (`git checkout -b my-new-feature`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
 
 # Feedback
 
 We welcome pull requests, bug fixes and issue reports.
 
 Before proposing a large change, first please discuss your change by raising an issue.
+
+
+[Flightaware Firehose]: https://fr.flightaware.com/commercial/firehose/documentation/summary
+[Flightaware Go]: https://github.com/keltia/flightaware-go/
+[Git flow]: https://git-flow.readthedocs.io/en/latest/presentation.html
+[Rust 1.56]: https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
