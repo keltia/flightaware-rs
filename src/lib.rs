@@ -20,7 +20,7 @@ pub(crate) const AUTHORS: &str = crate_authors!();
 /// ```
 /// # use flightaware_rs::description;
 ///
-/// println!(description());
+/// println!("{}", description());
 /// ```
 ///
 #[inline]
@@ -37,9 +37,9 @@ pub fn description() -> String {
 ///
 /// Example:
 /// ```
-/// # use flightaware_rs::version::version;
+/// # use flightaware_rs::version;
 ///
-/// println!(version());
+/// println!("{}", version());
 /// ```
 ///
 #[inline]
@@ -53,7 +53,7 @@ mod tests {
 
     #[test]
     fn test_api_version() {
-        assert_eq!(description(), format!("API/{}", API_VERSION));
+        assert_eq!(version(), format!("API/{}", API_VERSION));
     }
 
     #[test]
