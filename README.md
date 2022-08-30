@@ -1,4 +1,7 @@
+<!-- omit in TOC -->
 # flightaware-rs
+
+> **Rust bindings for Flightaware Firehose API**
 
 ## About
 
@@ -13,7 +16,7 @@ The `fa-export`) and `fa-tail` utilities are bundled directly as example code.
 [![Docs](https://img.shields.io/docsrs/flightaware-rs)](https://docs.rs/flightaware-rs)
 [![GitHub release](https://img.shields.io/github/release/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/issues)
-[![flightaware_rs: 1.56+]][Rust 1.56]
+[![flightaware-rs: 1.56+]][Rust 1.56]
 [![SemVer](https://img.shields.io/badge/semver-2.0.0-blue)][Semantic Versioning]
 [![License](https://img.shields.io/pypi/l/Django.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
@@ -199,6 +202,7 @@ Before proposing a large change, first please discuss your change by raising an 
 
 [Flightaware Firehose]: https://fr.flightaware.com/commercial/firehose/documentation/summary
 [Flightaware Go]: https://github.com/keltia/flightaware-go/
+[flightaware-rs: 1.56+]: https://img.shields.io/badge/Rust%20version-1.56%2B-lightgrey
 [Git flow]: https://git-flow.readthedocs.io/en/latest/presentation.html
 [Rust 1.56]: https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
