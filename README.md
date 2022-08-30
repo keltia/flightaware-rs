@@ -1,6 +1,6 @@
 # flightaware-rs
 
-## Description
+## About
 
 This is the library implementing the [Flightaware](http://www.flightaware.com/) Firehose API in Rust.  It just exports the streaming data into JSON, using the FA API.  It is a more recent implementation than my previous [Flightaware Go].
 
@@ -13,17 +13,21 @@ The `fa-export`) and `fa-tail` utilities are bundled directly as example code.
 [![Docs](https://img.shields.io/docsrs/flightaware-rs)](https://docs.rs/flightaware-rs)
 [![GitHub release](https://img.shields.io/github/release/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/keltia/flightaware-rs.svg)](https://github.com/keltia/flightaware-rs/issues)
-[![flightaware-rs: 1.56+]][Rust 1.56]
+[![flightaware_rs: 1.56+]][Rust 1.56]
 [![SemVer](https://img.shields.io/badge/semver-2.0.0-blue)][Semantic Versioning]
 [![License](https://img.shields.io/pypi/l/Django.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
-Licensed under the [BSD 2-clause](LICENSE).
+Licensed under the [BSD 2-clause](LICENSE.md) license.
 
-## MSRV
-
-The Minimum Supported Rust Version is 1.56 due to the 2021 Edition.
-
-The API exposed follows the [Semantic Versioning] 2.0.0 scheme to guarantee a consistent API compatibility.
+1. [About](#about)
+2. [Requirements](#requirements)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [API Usage](#api-usage)
+5. [References](#references)
+6. [MSRV](#msrv)
+7. [Contributing](#contributing)
+8. [Feedback](#feedback)
 
 ## Requirements
 
@@ -168,6 +172,12 @@ The [BSD 2-Clause license](https://github.com/keltia/flightaware-rs/LICENSE.md).
 
 # TODO
 
+
+## MSRV
+
+The Minimum Supported Rust Version is 1.56 due to the 2021 Edition.
+
+The API exposed follows the [Semantic Versioning] 2.0.0 scheme to guarantee a consistent API compatibility.
 
 # Contributing
 
